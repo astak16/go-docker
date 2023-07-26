@@ -4,6 +4,8 @@ ENV MYPATH /root/uccs
 WORKDIR $MYPATH
 ENV SHELL /bin/bash
 
+ENV LANG C.UTF-8
+
 ADD z /root/.z_jump 
 # RUN  apt-get update && apt-get install -y sudo zsh tree vim exa fzf
 RUN apt-get update && apt-get install -y sudo zsh tree vim exa fzf openssh-server silversearcher-ag fd-find rsync \
