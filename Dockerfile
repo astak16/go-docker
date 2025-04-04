@@ -1,4 +1,4 @@
-FROM golang:1.22-bookworm
+FROM golang:1.24.2-bookworm
 
 ENV MYPATH /root/uccs
 WORKDIR $MYPATH
